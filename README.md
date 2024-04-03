@@ -1,4 +1,4 @@
-# vue_tools_components
+# sc-toolbox
 
 ## Contributing
 
@@ -9,13 +9,14 @@
 5. Push to the Branch (`git push origin feature/AmazingFeature`)
 6. Open a Pull Request
 
-
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
