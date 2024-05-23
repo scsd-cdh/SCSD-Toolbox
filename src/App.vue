@@ -2,7 +2,7 @@
   <div id="app">
     <h1>SCSD Vue.js UI Components Library</h1>
     
-    <div class="my-5">
+    <div>
       <button class="round-blue-button" @click="goTo('UIButtons')">Go to Buttons</button>
       <button class="round-blue-button" @click="goTo('UIGraphs')">Go to Graphs</button>
       <button class="round-blue-button" @click="goTo('UIMenubars')">Go to Menubars</button>
