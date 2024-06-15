@@ -4,15 +4,14 @@
         <button class="
           mx-2 
           rounded px-4 py-2 
-          transition duration-300 
-          ease-in-out 
+          transition duration-100 
           text-white border 
           bg-green-700 
           border-green-700 
           hover:bg-white 
           hover:text-green-700">
           <font-awesome-icon :icon="['fas', 'check']" /> 
-          Success
+          {{ text }}
         </button>
       </div>
     </div>
@@ -20,7 +19,13 @@
   
   <script>
   export default {
-    name: 'SucessButton'
+    name: 'SucessButton',
+    props: {
+      text: {
+        type: String,
+        default: 'Success',
+      },
+    },
   }
   </script>
   
