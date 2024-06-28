@@ -6,15 +6,6 @@ import Home from "./pages/Home.vue";
 import Buttons from "./pages/Buttons.vue";
 import Graphs from "./pages/Graphs.vue";
 
-///// fontawesome /////
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faCheck, faTriangleExclamation, faXmark } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faCheck, faTriangleExclamation, faXmark)
-///////
-
-
 
 ////// router //////
 const routes = [
@@ -31,5 +22,4 @@ const router = createRouter({
 
 createApp(App)
 .use(router)
-.component('font-awesome-icon', FontAwesomeIcon)
 .mount("#app");

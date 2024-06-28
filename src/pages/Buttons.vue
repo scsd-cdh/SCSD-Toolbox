@@ -1,21 +1,19 @@
 <template>
-    <div class="flex justify-center items-center space-x-4">
-        <SuccessButton />
-        <WarningButton />
-        <FailButton text="Problem" />
-    </div>
+    <section class="flex gap-4 items-center justify-center">
+        <Button>Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="link">Link</Button>
+        <Button variant="destructive">Destructive</Button>
+        <Button variant="ghost">ghost</Button>
+    </section>
 </template>
 
 <script>
-    import SuccessButton from '../components/Buttons/SuccessButton.vue';
-    import WarningButton from '../components/Buttons/WarningButton.vue';
-    import FailButton from '../components/Buttons/FailButton.vue';
+    import { Button } from '@/components/Buttons'
 
     export default {
         components: {
-            SuccessButton,
-            WarningButton,
-            FailButton,
+            Button,
         }
     }
 </script>

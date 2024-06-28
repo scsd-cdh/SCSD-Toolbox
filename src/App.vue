@@ -9,12 +9,14 @@
 
 
 <script>
-import UINavbar from './components/Navbar/UINavbar.vue';
+import UINavbar from '@/components/Navbar/UINavbar.vue';
+import { Button } from '@/components/Buttons';
 
 export default {
   name: 'App',
   components: {
     UINavbar,
+    Button,
   },
 };
 </script>
