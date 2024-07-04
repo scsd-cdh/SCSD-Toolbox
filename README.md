@@ -1,22 +1,12 @@
-# sc-toolbox
+# sc-Toolbox
+This project is a collection of Vue frontend components intended to be used in various projects within the Space Concordia Spacecraft division. Current components are the ones from the [shadcn-vue](https://www.shadcn-vue.com/docs/introduction.html) library. We will be working on customizing and adding new components to this library to better suit the team's needs.
 
-## Contributing
-
-1. Fork the Project
-2. Clone your Fork
-3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the Branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
-
-## Project setup
-
+## View components locally
+This project can be ran locally to view the components in action by running the following commands:
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
 npm run serve
 ```
+
+## Import components as an npm package
+Coming soon...
