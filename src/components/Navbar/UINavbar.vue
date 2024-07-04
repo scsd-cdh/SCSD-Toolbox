@@ -16,6 +16,7 @@
         <section class="space-x-4">
             <router-link to="/" class="text-white hover:text-blue-300">Home</router-link>
             <router-link to="/Buttons" class="text-white hover:text-blue-300">Buttons</router-link>
+            <router-link to="/Tables" class="text-white hover:text-blue-300">Tables</router-link>
             <router-link to="/Graphs" class="text-white hover:text-blue-300">Graphs</router-link>
         </section>
 
