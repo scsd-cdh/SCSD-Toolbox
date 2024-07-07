@@ -4,19 +4,20 @@ import App from "./App.vue";
 import "./index.css";
 import Home from "./pages/Home.vue";
 import Buttons from "./pages/Buttons.vue";
-import Graphs from "./pages/Graphs.vue";
+import Badges from "./pages/Badges.vue";
+import Tables from "./pages/Tables.vue";
 
 
 ////// router //////
-const routes = [
-    { path: '/', component: Home },
-    { path: '/Buttons', component: Buttons },
-    { path: '/Graphs', component: Graphs }
-]
-  
 const router = createRouter({
     history: createWebHistory(),
-    routes : routes
+    routes : [
+        { path: '/', component: Home },
+        { path: '/Buttons', component: Buttons },
+        { path: '/Badges', component: Badges },
+        { path: '/Tables', component: Tables },
+    ],
+    linkActiveClass: 'active',
 })
 ////////
 

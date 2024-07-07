@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <UINavbar />
+    <UINavbar 
+      title="SCSD Vue.js UI Components Library"
+      :links="[
+        { text: 'Home', to: '/' },
+        { text: 'Buttons', to: '/buttons' },
+        { text: 'Badges', to: '/badges' },
+        { text: 'Tables', to: '/tables' },
+      ]"
+    />
     <div class="mt-8">
       <RouterView />
     </div>
@@ -9,14 +17,12 @@
 
 
 <script>
-import UINavbar from '@/components/Navbar/UINavbar.vue';
-import { Button } from '@/components/Buttons';
+import UINavbar from '@/components/navbar/UINavbar.vue';
 
 export default {
   name: 'App',
   components: {
     UINavbar,
-    Button,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-blue-700 p-4 text-white flex justify-between items-center">
+    <nav class="bg-blue-900 p-4 text-white flex justify-between items-center">
 
         <section class="flex items-center space-x-4">
             <img src="@/assets/scsd.png" alt="SCSD Logo" class="w-16 h-auto">
@@ -10,14 +10,16 @@
         </section>
 
         <section>
-            <h1 class="text-white text-2xl font-bold">SCSD Vue.js UI Components Library</h1>
+            <h1 class="text-white text-2xl font-bold">{{ title }}</h1>
         </section>
 
-        <section class="space-x-4">
-            <router-link to="/" class="text-white hover:text-blue-300">Home</router-link>
-            <router-link to="/Buttons" class="text-white hover:text-blue-300">Buttons</router-link>
-            <router-link to="/Tables" class="text-white hover:text-blue-300">Tables</router-link>
-            <router-link to="/Graphs" class="text-white hover:text-blue-300">Graphs</router-link>
+        <section class="space-x-4 text-white">
+            <router-link 
+                v-for="link in links" :key="link.text" :to="link.to" 
+                class="hover:text-blue-100"
+                active-class="text-blue-300">
+                {{ link.text }}
+            </router-link>
         </section>
 
     </nav>
@@ -26,6 +28,16 @@
 <script>
 export default {
     name: 'UINavbar',
+    props: {
+        title: {
+            type: String,
+            default: "Navbar title",
+        },
+        links: {
+            type: Array,
+            default: () => [],
+        },
+    },
     data() {
         return {
             currentDate: this.getCurrentDate(),
@@ -47,7 +59,7 @@ export default {
         },
     },
     mounted() {
-        setInterval(this.updateDateTime, 1000); // Update date and time every minute
+        setInterval(this.updateDateTime, 1000);
     },
 };
 </script>
