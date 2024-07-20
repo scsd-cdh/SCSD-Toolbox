@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import { createWebHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from "vue-router";
 import App from "./App.vue";
 import "./index.css";
 import Home from "./pages/Home.vue";
@@ -12,12 +12,12 @@ import Tables from "./pages/Tables.vue";
 const router = createRouter({
     history: createWebHistory(),
     routes : [
-        { path: '/', component: Home },
-        { path: '/Buttons', component: Buttons },
-        { path: '/Badges', component: Badges },
-        { path: '/Tables', component: Tables },
+        { path: "/", component: Home },
+        { path: "/Buttons", component: Buttons },
+        { path: "/Badges", component: Badges },
+        { path: "/Tables", component: Tables },
     ],
-    linkActiveClass: 'active',
+    linkActiveClass: "active",
 })
 ////////
 

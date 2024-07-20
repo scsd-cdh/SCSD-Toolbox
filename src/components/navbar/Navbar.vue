@@ -27,7 +27,7 @@
 
 <script>
 export default {
-    name: 'UINavbar',
+    name: "UINavbar",
     props: {
         title: {
             type: String,
@@ -47,11 +47,11 @@ export default {
     methods: {
         getCurrentDate() {
             const now = new Date();
-            return now.toLocaleDateString('en-GB');
+            return now.toLocaleDateString("en-GB");
         },
         getCurrentTime() {
             const now = new Date();
-            return now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            return now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true });
         },
         updateDateTime() {
             this.currentDate = this.getCurrentDate();

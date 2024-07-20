@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <UINavbar 
+    <Navbar 
       title="SCSD Vue.js UI Components Library"
       :links="[
         { text: 'Home', to: '/' },
@@ -9,20 +9,20 @@
         { text: 'Tables', to: '/tables' },
       ]"
     />
-    <div class="mt-8">
+    <section class="mt-8">
       <RouterView />
-    </div>
+    </section>
   </div>
 </template>
 
 
 <script>
-import UINavbar from '@/components/navbar/UINavbar.vue';
+import Navbar from "@/components/navbar/Navbar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    UINavbar,
+    Navbar,
   },
 };
 </script>

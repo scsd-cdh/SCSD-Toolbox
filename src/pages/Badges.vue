@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import { Badge } from '@/components/badge'
+    import { Badge } from "@/components/badge"
 
     export default {
         components: {
