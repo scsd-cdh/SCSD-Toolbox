@@ -1,5 +1,5 @@
-# sc-Toolbox
-This project is a collection of Vue frontend components intended to be used in various projects within the Space Concordia Spacecraft division. Current components are the ones from the [shadcn-vue](https://www.shadcn-vue.com/docs/introduction.html) library. We will be working on customizing and adding new components to this library to better suit the team's needs.
+# scsd-Toolbox
+This project is a collection of Vue frontend components intended to be used in various projects within the Space Concordia Spacecraft Division. Current components are the ones from the [shadcn-vue](https://www.shadcn-vue.com/docs/introduction.html) library in addition to a custom navbar. We will be working on customizing and adding new components to this library to better suit the team's needs.
 
 ## View components locally
 This project can be ran locally to view the components in action by running the following commands:
