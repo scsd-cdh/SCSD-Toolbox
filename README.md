@@ -9,4 +9,12 @@ npm run serve
 ```
 
 ## Import components as an npm package
-Coming soon...
+You can import the components as an npm package into your own project by running the following command:
+```
+npm install scsd-toolbox
+```
+
+Then you can use the components into your project by adding the following line to your main.js file (a button component is used as an example):
+```
+import { Button } from 'scsd-toolbox'
+```

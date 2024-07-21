@@ -1,11 +1,20 @@
 {
-  "name": "sc-toolbox",
+  "name": "scsd-toolbox",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "type": "module",
+  "main": "dist/bundle.umd.js",
+  "module": "dist/bundle.esm.js",
+  "repository": "https://github.com/scsd-cdh/SC-Toolbox.git",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vue": "^3.2.13"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -20,11 +29,16 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "rollup": "^4.19.0",
+    "rollup-plugin-vue": "^6.0.0",
     "tailwindcss": "^3.4.3",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.7.16"
   }
 }
