@@ -27,7 +27,7 @@
 
 <script>
 export default {
-    name: "UINavbar",
+    name: "Navbar",
     props: {
         title: {
             type: String,
